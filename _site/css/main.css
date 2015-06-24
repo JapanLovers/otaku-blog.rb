@@ -493,7 +493,7 @@ a, a:visited {
   font-size: 100%;
   vertical-align: baseline; }
 
-.site-title a {
+.site-title a, .site-nav .page-link {
   color: #FFF; }
 
 a:hover, .page-link:hover {
