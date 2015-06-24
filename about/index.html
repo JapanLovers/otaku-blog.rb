@@ -1,0 +1,15 @@
+---
+title: about
+layout: default
+permalink: /about/
+---
+
+<ul>
+  {% for author in site.data.authors %}
+  <li>
+    <a href="https://gihtub.com/{{author.github}}">
+      {{author.name}}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
