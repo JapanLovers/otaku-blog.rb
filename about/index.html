@@ -1,5 +1,5 @@
 ---
-title: about
+title: À propos
 layout: default
 permalink: /about/
 ---
@@ -7,6 +7,8 @@ permalink: /about/
 <ul>
   {% for author in site.data.authors %}
   <li>
+    <img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
+
     <a href="https://gihtub.com/{{author.github}}">
       {{author.name}}
     </a>
