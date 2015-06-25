@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Je suis un post test!"
 date:   2015-06-18 19:13:11
 categories: jekyll update
 ---
