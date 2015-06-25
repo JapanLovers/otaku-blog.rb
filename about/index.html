@@ -4,14 +4,24 @@ layout: default
 permalink: /about/
 ---
 
-<ul>
+<ul id="author-container">
   {% for author in site.data.authors %}
-  <li>
+  <li class="about-author">
     <img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
-
-    <a href="https://gihtub.com/{{author.github}}">
-      {{author.name}}
-    </a>
+   	<div id="about-description">
+   		<a href="https://gihtub.com/{{author.github}}">
+      		{{author.name}}
+  		</a>
+   	</div> 
+    <p>
+    	Je suis une description Je suis une description<br>
+    	Je suis une description Je suis une description<br>
+    	Je suis une description Je suis une description<br>
+    	Je suis une description Je suis une description<br>
+    	Je suis une description Je suis une description<br>
+    	Je suis une description Je suis une description<br>
+    </p>
   </li>
+
   {% endfor %}
 </ul>
