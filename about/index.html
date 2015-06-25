@@ -7,8 +7,10 @@ permalink: /about/
 <ul id="author-container">
   {% for author in site.data.authors %}
   <li class="about-author">
-    <img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
-   	<div id="about-description">
+  	<a href="https://gihtub.com/{{author.github}}">
+      	<img src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
+  	</a>
+   	<div class="about-description">
    		<a href="https://gihtub.com/{{author.github}}">
       		{{author.name}}
   		</a>
