@@ -13,8 +13,8 @@ namespace :site do
     })).process
 
     # Get the origin to which we are going to push the site.
-    origin = "https://github.com/JapanLovers/JapanLovers.github.io.git"
-
+    #origin = "https://github.com/JapanLovers/JapanLovers.github.io.git"
+    origin = "git@github.com:JapanLovers/JapanLovers.github.io.git"
     # Make a temporary directory for the build before production release.
 
     Dir.mktmpdir do |tmp|

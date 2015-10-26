@@ -13,10 +13,10 @@ namespace :site do
     })).process
 
     # Get the origin to which we are going to push the site.
-    origin = `git config --get remote.origin.url`
-
+    #origin = "https://github.com/JapanLovers/JapanLovers.github.io.git"
+    origin = "git@github.com:JapanLovers/JapanLovers.github.io.git"
     # Make a temporary directory for the build before production release.
-    # This will be torn down once the task is complete.
+
     Dir.mktmpdir do |tmp|
       # Copy accross our compiled _site directory.
       cp_r "_site/.", tmp
@@ -32,7 +32,7 @@ namespace :site do
       system "git remote add origin #{origin}"
 
       # Push the files to the gh-pages branch, forcing an overwrite.
-      system "git push origin master:refs/heads/gh-pages --force"
+      system "git push origin master --force"
     end
     # Done.
   end
